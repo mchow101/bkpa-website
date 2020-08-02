@@ -1,5 +1,9 @@
 var links = {
     "index": "main.html",
+    "mission": "story/mission.html",
+    "about": "story/about.html",
+    "leadership": "story/leadership.html",
+    "bengali": "story/bengali.html",
     "bhc": "education/bhc.html",
     "fun": "education/fun.html",
     "trips": "education/trips.html",
@@ -8,13 +12,13 @@ var links = {
     "calendar": "culture/calendar.html",
     "upcoming": "culture/upcoming.html",
     "emagazines": "literature/emagazines.html",
-    "books": "literature/books.html",
+    "books": "literature/book.html",
     "scholarships": "literature/scholarships.html",
-    "events": "charity/events.html",
-    "drives": "charity/drives.html",
+    "fundraising": "charity/fundraising.html",
+    "gives": "charity/gives.html",
     "volunteer": "charity/volunteer.html",
     "contact": "involved/contact.html",
-    "sponsor": "involved/sponsor.html"
+    "donate": "involved/sponsor.html"
 };
 
 var page = document.URL.substring(document.URL.lastIndexOf('#') + 1);

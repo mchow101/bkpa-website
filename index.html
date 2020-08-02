@@ -7,67 +7,101 @@
 
 <body>
 	<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-		<a class="navbar-brand" href="#">BKPA</a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03" aria-controls="navbarsExample03"
-		 aria-expanded="false" aria-label="Toggle navigation">
+		<a class="navbar-brand" href="#" onclick="setpage('index')"><img class="icon" src="../../images/BKPALogo.PNG" style="max-width:65px"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample03"
+			aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button>
 
 		<div class="collapse navbar-collapse">
 			<ul class="navbar-nav mr-auto">
-				<li class="nav-item active">
-					<a class="nav-link" href="#">Our Story</a>
-				</li>
 				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Education</a>
+					<a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="false">Our Story</a>
 					<div class="dropdown-menu">
-						<a class="dropdown-item" href="#bhc">Bengali Heritage Class</a>
-						<a class="dropdown-item" href="#fun">Fun Activities</a>
-						<a class="dropdown-item" href="#trips">Trips and Tours</a>
-						<a class="dropdown-item" href="#shadowing">Physician Shadowing Program</a>
-					</div>
-				</li>
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Culture</a>
-					<div class="dropdown-menu">
-						<a class="dropdown-item" href="#annual">Annual Events</a>
-						<a class="dropdown-item" href="#calendar">Calendar</a>
-						<a class="dropdown-item" href="#upcoming">Upcoming Events</a>
+						<a class="dropdown-item" href="#mission" onclick="setpage('mission')">Mission</a>
+						<a class="dropdown-item" href="#about" onclick="setpage('about')">About BKPA</a>
+						<a class="dropdown-item" href="#leadership" onclick="setpage('leadership')">Leadership</a>
+						<a class="dropdown-item" href="#bengali" onclick="setpage('bengali')">About Bengali</a>
 					</div>
 				</li>
 
 				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Literature</a>
+					<a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="false">Education</a>
 					<div class="dropdown-menu">
-						<a class="dropdown-item" href="#emagazines">E-Magazines</a>
-						<a class="dropdown-item" href="#books">Book Publishing</a>
-						<a class="dropdown-item" href="#scholarships">Academic Scholarships</a>
+						<a class="dropdown-item" href="#bhc" onclick="setpage('bhc')">Bengali Heritage Class</a>
+						<a class="dropdown-item" href="#fun" onclick="setpage('fun')">Fun Activities</a>
+						<a class="dropdown-item" href="#trips" onclick="setpage('trips')">Trips and Tours</a>
+						<a class="dropdown-item" href="#shadowing" onclick="setpage('shadowing')">Physician Shadowing
+							Program</a>
 					</div>
 				</li>
 
 				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Charity</a>
+					<a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="false">Culture</a>
 					<div class="dropdown-menu">
-						<a class="dropdown-item" href="#events">Events</a>
-						<a class="dropdown-item" href="#drives">Drives</a>
-						<a class="dropdown-item" href="#volunteer">Volunteering Abroad</a>
+						<a class="dropdown-item" href="#calendar" onclick="setpage('calendar')">Calendar</a>
+						<a class="dropdown-item" href="#annual" onclick="setpage('annual')">Annual Events</a>
+						<a class="dropdown-item" href="#upcoming" onclick="setpage('upcoming')">Upcoming Events</a>
 					</div>
 				</li>
 
 				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Get Involved</a>
+					<a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="false">Literature</a>
 					<div class="dropdown-menu">
-						<a class="dropdown-item" href="#contact">Contact</a>
-						<a class="dropdown-item" href="#sponsor">Sponsors</a>
+						<a class="dropdown-item" href="#emagazines" onclick="setpage('emagazines')">E-Magazines</a>
+						<a class="dropdown-item" href="#books" onclick="setpage('books')">Book Publishing</a>
+						<a class="dropdown-item" href="#scholarships" onclick="setpage('scholarships')">Academic
+							Scholarships</a>
+					</div>
+				</li>
+
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="false">Charity</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#events" onclick="setpage('gives')">BKPA Gives</a>
+						<a class="dropdown-item" href="#drives" onclick="setpage('fundraising')">Fundraising</a>
+						<a class="dropdown-item" href="#volunteer" onclick="setpage('volunteer')">Volunteering
+							Abroad</a>
+					</div>
+				</li>
+
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="false">Get Involved</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#contact" onclick="setpage('contact')">Contact</a>
+						<a class="dropdown-item" href="#donate" onclick="setpage('donate')">Donate</a>
 					</div>
 				</li>
 			</ul>
 		</div>
 	</nav>
+
 	<div id="content"></div>
+
+	<footer class="footer mt-auto py-3 bg-light">
+		<div class="container lead" style="margin:auto">
+			<span class="text-muted">Thank you to our sponsors!</span>
+			<div class="row featurette">
+				<span class="col-md-4"><a href="http://stonetechmarble.com/">Stonetech Marble</a></span>
+				<span class="col-md-4"><a href="http://stipharmallc.com/">STI Pharma LLC</a></span>
+				<span class="col-md-4">New York Life Insurance Company - <a
+						href="http://bkpa.org/contentFiles/SGMFlyer.pdf">Agent Ms. Samragnee Majumdar</a></span>
+			</div>
+			<div class="row featurette">
+				<span class="col-md-5"><a href="https://www.facebook.com/bkpa.usa">Like our FaceBook page!</a></span>
+				<span class="col-md-5"><a href="#">Follow our Instagram!</a></span>
+		</div>
+	</footer>
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" crossorigin="anonymous"></script>
 	<script src="../../bootstrap/bootstrap.js"></script>
-	<script src="../../js/main.js"></script>
+	<script src="main.js"></script>
 </body>
 
 </html>

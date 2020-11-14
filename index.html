@@ -13,7 +13,7 @@
 			<span class="navbar-toggler-icon"></span>
 		</button>
 
-		<div class="collapse navbar-collapse">
+		<div class="collapse navbar-collapse" style="font-weight:bold;font-size: 18px">
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
@@ -28,10 +28,10 @@
 
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-						aria-expanded="false">Education</a>
+						aria-expanded="false">Educational</a>
 					<div class="dropdown-menu">
 						<a class="dropdown-item" href="#bhc" onclick="setpage('bhc')">Bengali Heritage Class</a>
-						<a class="dropdown-item" href="#fun" onclick="setpage('fun')">Fun Activities</a>
+						<a class="dropdown-item" href="#fun" onclick="setpage('fun')">Learning Games</a>
 						<a class="dropdown-item" href="#trips" onclick="setpage('trips')">Trips and Tours</a>
 						<a class="dropdown-item" href="#shadowing" onclick="setpage('shadowing')">Physician Shadowing
 							Program</a>
@@ -40,7 +40,7 @@
 
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-						aria-expanded="false">Culture</a>
+						aria-expanded="false">Cultural</a>
 					<div class="dropdown-menu">
 						<a class="dropdown-item" href="#annual" onclick="setpage('annual')">Performances and Events</a>
 						<a class="dropdown-item" href="#upcoming" onclick="setpage('upcoming')">Seasonal Gatherings</a>
@@ -49,7 +49,19 @@
 
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-						aria-expanded="false">Literature</a>
+						aria-expanded="false">Charitable</a>
+					<div class="dropdown-menu">
+						<a class="dropdown-item" href="#gives" onclick="setpage('gives')">BKPA Gives</a>
+						<!--<a class="dropdown-item" href="#fundraising" onclick="setpage('fundraising')">Fundraising</a>
+						<a class="dropdown-item" href="#volunteer" onclick="setpage('volunteer')">Outreach</a>
+						<a class="dropdown-item" href="#scholarships" onclick="setpage('scholarships')">Academic
+							Scholarships</a>-->
+					</div>
+				</li>
+				
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="false">Literary</a>
 					<div class="dropdown-menu">
 						<a class="dropdown-item" href="#emagazines" onclick="setpage('emagazines')">E-Magazines</a>
 						<a class="dropdown-item" href="#books" onclick="setpage('books')">Book Publishing</a>
@@ -58,23 +70,14 @@
 
 				<li class="nav-item dropdown">
 					<a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
-						aria-expanded="false">Charity</a>
-					<div class="dropdown-menu">
-						<a class="dropdown-item" href="#gives" onclick="setpage('gives')">BKPA Gives</a>
-						<a class="dropdown-item" href="#fundraising" onclick="setpage('fundraising')">Fundraising</a>
-						<a class="dropdown-item" href="#volunteer" onclick="setpage('volunteer')">Outreach</a>
-						<a class="dropdown-item" href="#scholarships" onclick="setpage('scholarships')">Academic
-							Scholarships</a>
-					</div>
-				</li>
-
-				<li class="nav-item dropdown">
-					<a class="nav-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true"
 						aria-expanded="false">Get Involved</a>
 					<div class="dropdown-menu">
-						<a class="dropdown-item" href="#contact" onclick="setpage('contact')">Contact</a>
 						<a class="dropdown-item" href="#donate" onclick="setpage('donate')">Donate</a>
 					</div>
+				</li>
+				
+				<li class="nav-item">
+				    <a class="nav-link" href="#contact" onclick="setpage('contact')">Contact</a>
 				</li>
 			</ul>
 		</div>
@@ -82,19 +85,50 @@
 
 	<div id="content"></div>
 
-	<footer class="footer mt-auto py-3 bg-light">
-		<div class="container lead" style="margin:auto">
-			<span class="text-muted">Thank you to our sponsors!</span>
-			<div class="row featurette">
-				<span class="col-md-4"><a href="http://stonetechmarble.com/">Stonetech Marble</a></span>
-				<span class="col-md-4"><a href="http://stipharmallc.com/">STI Pharma LLC</a></span>
-				<span class="col-md-4">New York Life Insurance Company - <a
-						href="http://bkpa.org/contentFiles/SGMFlyer.pdf">Agent Ms. Samragnee Majumdar</a></span>
+	<footer class="footer mt-auto py-3" style="border-top: 1px solid #header-color; background-color: #header-color55">
+		<div class="container lead text-center">
+			<span class="text-center" style="margin-bottom:15px"><b>Thank you to our sponsors!</b></span>
+			<div class="row featurette" style="margin-bottom:5px; margin-top:10px; font-size: .8em">
+				<div class="col-md-4 text-center">
+					<a href="http://stonetechmarble.com/">
+					<img style="display: block; margin-left: auto; margin-right: auto; height:50px" 
+						 src="http://bkpa.org/pages/new_design/images/stonetech.png">
+					Stonetech Marble</a>
+				</div>
+				<div class="col-md-4 text-center">
+					<a href="http://bkpa.org/contentFiles/SGMFlyer.pdf">
+					<img style="display: block; margin-left: auto; margin-right: auto; height:50px" 
+						 src="http://bkpa.org/pages/new_design/images/nylife.png">
+					New York Life Insurance Company - Agent Ms. Samragnee Majumdar</a>
+				</div>
+				<div class="col-md-4 text-center">
+					<a href="http://stipharmallc.com/">
+					<img style="display: block; margin-left: auto; margin-right: auto; height:50px" 
+						 src="http://bkpa.org/pages/new_design/images/sti.png">
+					STI Pharma LLC</a>
+				</div>
 			</div>
-			<div class="row featurette">
-				<span class="col-md-5"><a href="https://www.facebook.com/bkpa.usa">Like our FaceBook page!</a></span>
-				<span class="col-md-5"><a href="#">Follow our Instagram!</a></span>
-			</div>
+			<hr class="featurette-divider">
+			<div class="row featurette" style="font-size: 0.8em">
+				<div class="col-md-4 text-center">
+					<a href="https://www.facebook.com/bkpa.usa">
+					<img style="display: block; margin-left: auto; margin-right: auto; height:50px" 
+						 src="http://bkpa.org/pages/new_design/images/fb.png">
+					Like our FaceBook page!</a>
+				</div>
+				<div class="col-md-4 text-center">
+					<a href="https://www.instagram.com/bengalikids_bkpa/?fbclid=IwAR221YcoEIN_OGZWu4tQZRhgyBAjWEJbFCwzl0pQThDypbnZP1i4vq6U-CY">
+					<img style="display: block; margin-left: auto; margin-right: auto; height:50px" 
+						  src="http://bkpa.org/pages/new_design/images/insta.png">
+					Follow our Instagram!</a>
+				</div>
+				<div class="col-md-4 text-center">
+					<a href="mailto:bkpa@bkpa.org">
+					<img style="display: block; margin-left: auto; margin-right: auto; height:50px" 
+						 src="http://bkpa.org/pages/new_design/images/mail.png">
+					Join our Mailing List!</a>
+				</div>
+			</div> 
 		</div>
 	</footer>
 

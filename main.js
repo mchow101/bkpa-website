@@ -53,13 +53,8 @@ function setpage(curpage) {
     console.log(links[page].substring(0, i));
 		document.body.innerHTML = document.body.innerHTML.replace("#header-color", color);
 		$(".navbar")[0].style.backgroundColor = color;
+		$(".footer")[0].style.backgroundColor = color + "55";
+		$(".footer")[0].style.borderTop = "1px solid " + color;
         $('#content').load(file);
 	});
 }
-
-//$(document).ready(function () {
-	//function getFile(file, color) {
-	//	setpage(page);
-        
-	//}
-//});
